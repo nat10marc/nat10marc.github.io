@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
+:root {
+    --font-title: "Roboto", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #cacaca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    height: 38vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+header::before {
+    content: "";
+    background-color: #a7b1ddcb;
+    background-size: contain;
+    height: 49vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: -10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content img {
+    height: 60px;
+    width: 60px;
+    margin: 0 20px;
+}
+
+nav {
+    margin-top: 0.5%;
+    background-color: #77a6ecad;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #2978f0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: "Revalia", sans-serif;
+    color: #000000;
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+
+#secao-planejamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #cacaca;
+    width: 100%;
+}
+
+.form-container {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2, .form-container h3 {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+
+.form-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.campo input {
+    width: 98%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Botao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Botao button {
+    background-color: #658bc4a9;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.Botao button:hover {
+    background-color: #77a6ec;
+}
+
+.form-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.form-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#logo, #logo2 {
+    height: 60px;
+    width: 60px;
+}
+#sobre{
+    padding: 20px;
+    background-color: #cacaca;
+
+
+}
+#sobre h2{
+text-align: center;
+font-size: 30px;
+margin-top: 5% ;
+font-family: "Poppins", sans-serif;
+
+}
+#sobre h3{
+font-size: 19px;
+font-family: sans-serif;
+text-align: center;
+
+
+
+
+}
+#secao-projetos {
+    margin-top: 4%;
+    background-color: #cacaca;
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#projects {
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    background-color: #539dbb8f;
+    margin-bottom: 2%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#secao-projetos ul {
+    margin-left: 13%;
+    margin-right: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover .image-wrapper img {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.card-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-text h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#viagens-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#viagens-container h2 {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#viagens-list {
+    list-style: none;
+    padding: 0;
+}
+
+#viagens-list li {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#viagens-list li h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#viagens-list li p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+#viagens-list li span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+.busca {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.busca input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.busca button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #658bc4a9;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.busca button:hover {
+    background-color: #77a6ec;
+}
+.viagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.viagem h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.viagem p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.viagem span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+
+.viagem button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d9534f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.viagem button:hover {
+    background-color: #c9302c;
+}
