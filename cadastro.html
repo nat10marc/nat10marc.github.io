@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/cadas"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./assets/images/ter.png" alt="Ocorreu um erro!">
+        <h1>SosMares</h1>
+        <img id="logo2" src="./assets/images/ter.png" alt="Ocorreu um erro!">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="viagens.html">Viagens</a></li>
+            <li><a href="index.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <section id="secao-planejamento">
+        <div class="form-container">
+            <h2>Cadastre sua viagem!</h2>
+            <form id="form-cadastro">
+                <div class="campo nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Nome" id="nome" required>
+                </div>
+
+                <div class="campo Desc">
+                    <label for="Descrição">Descrição</label>
+                    <input type="text" id="desc" name="desc" placeholder="Descrição" required>
+                </div>
+                <div class="campo ini">
+                    <label for="ini">Data de partida</label>
+                    <input type="date" id="inic" name="inic" placeholder="Inicio" required>
+                </div>
+                <div class="campo cheg">
+                    <label for="ini">Data de retorno</label>
+                    <input type="date" id="said" name="said" placeholder="Retorno" required>
+                </div>
+                <div class="campo Tripula">
+                    <label for="tripu">Número de tripulantes</label>
+                    <input type="number" id="tripus" name="tripus" placeholder="Tripulação" required>
+                </div>
+                <div class="campo meta">
+                    <label for="meta">Meta de resíduos a serem coletados(Em toneladas)</label>
+                    <input type="number" id="metas" name="metas" placeholder="Metas" required>
+                </div>
+                <div class="campo lugar">
+                    <label for="regiao">Escolha uma região:</label>
+                    <select id="regiao" name="regiao">
+                        <option value="americas">Américas</option>
+                        <option value="europa">Europa</option>
+                        <option value="asia">Ásia</option>
+                        <option value="africa">África</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
+
+                <div class="Botao">
+                    <button type="button" id="botao-cancelar" class="outline">Cancelar</button>
+                    <button type="submit" id="botao-cadastrar">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
